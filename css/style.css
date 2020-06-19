@@ -55,8 +55,12 @@ section {
     height: 100vh;
 }
 
+
 #home-heading {
-    margin: 200px 200px;
+    position: absolute;
+    text-align: center;
+    top:40%;
+    width: 100%;
 }
 
 
@@ -79,26 +83,20 @@ section {
     font-size: 17px;
 }
 .data a{
+    font-size: 20px;
+    padding: 7px;
+}
+
+.icons{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.icons a{
     padding: 7px;
 }
 
 
-/* .icons a .fa{
-    padding: 10px;
-}  
-
-.icons a .fa:hover {
-    opacity: 0.7;
-} 
-.icons a .fa-linkedin {
-  font-size:36px;
-  color: #007bb5
-}
-
-.icons a .fa-github{
-  font-size:36px;
-  color: black
-}  */
 
 
 
@@ -125,14 +123,14 @@ section {
 .btn-home:hover,
 .btn-home:focus {
     color: #fff;
-    background-color: #f4c613;
-    border: 1px solid #f4c613;
+    background-color: #695506;
+    border: 1px solid #695506;
 }
 
 .btn-yellow {
     color: #fff;
-    border: 1px solid #f4c613;
-    background-color: #f4c613;
+    border: 1px solid #695506;
+    background-color: #695506;
 }
 
 .btn-yellow:hover,
@@ -567,213 +565,6 @@ ul.social-list li:nth-child(3) a:hover {
 
 
 /* =========================================
-                Portfolio
-============================================ */
-
-#portfolio {
-    padding-bottom: 160px;
-}
-
-#portfolio .vertical-heading {
-    margin-bottom: 50px;
-}
-
-.row.no-gutters [class*=col-] {
-    padding: 0;
-}
-
-.portfolio-item {
-    overflow: hidden;
-    position: relative;
-}
-
-
-/* Filters CSS */
-
-#isotope-filters {
-    margin-bottom: 10px;
-    padding: 20px 25px 20px 0;
-}
-
-#isotope-filters button {
-    font-family: "Raleway", sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    padding-right: 35px;
-    outline: 0;
-}
-
-#isotope-filters button span {
-    display: block;
-    padding-bottom: 5px;
-    -webkit-transition: border-color .4s ease-in-out;
-    transition: border-color .4s ease-in-out;
-}
-
-#isotope-filters button.active span {
-    color: #f4c613;
-    border-bottom: 3px solid #f4c613;
-}
-
-
-/* Zoom Effect */
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
-    transition: transform .5s ease, -webkit-transform .5s ease;
-}
-
-.portfolio-item:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-
-/* Overlay Effect */
-
-.portfolio-item-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(14, 14, 17, 0.9);
-    cursor: -webkit-zoom-in;
-    cursor: pointer;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-
-/* Item Details Effect */
-
-.portfolio-item-details {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.portfolio-item-details h3 {
-    color: #f4c613;
-    text-transform: uppercase;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.portfolio-item-details span {
-    display: inline-block;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    height: 6px;
-    width: 30px;
-    margin: 11px auto 5px auto;
-}
-
-.portfolio-item-details p {
-    font-size: 17px;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-
-/* Show Overlay on mouse over */
-
-.portfolio-item:hover .portfolio-item-details h3 {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-.portfolio-item:hover .portfolio-item-details p {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-.portfolio-item:hover .portfolio-item-overlay {
-    opacity: 1;
-}
-
-
-/* =========================================
-                Testimonials
-============================================ */
-
-#testimonials {
-    background: #f4f4f4;
-    padding-bottom: 45px;
-    overflow: visible;
-}
-
-#testimonials .vertical-heading {
-    padding: 80px 0;
-    margin-bottom: 50px;
-}
-
-#testimonial-slider {
-    background: #f4c613;
-    top: -120px;
-}
-
-.testimonial .row {
-    margin-bottom: 25px;
-}
-
-.testimonial {
-    padding: 20px 45px 0 45px;
-    color: #fff;
-}
-
-.testimonial h3 {
-    font-size: 32px;
-    line-height: 35px;
-}
-
-.testimonial .stars {
-    font-size: 20px;
-    margin: 20px 0 10px 0;
-}
-
-.testimonial p {
-    line-height: normal;
-    margin: 0;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-.author .author-name-des {
-    width: 106px;
-    margin-top: 25px;
-    text-align: left;
-}
-
-.author .author-name-des p {
-    margin: 0;
-}
-
-
-/* =========================================
                 Pricing
 ============================================ */
 
@@ -1168,7 +959,7 @@ footer p span {
 ul.navbar-nav>li>a {
     font-family: "Raleway", sans-serif;
     color: #fff;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1194,6 +985,7 @@ ul.navbar-nav>li>a:focus {
 .white-nav-top ul.navbar-nav>li>a {
     color: #fff;
     font-weight: bold;
+    font-size: 15px;
 }
 
 .white-nav-top ul.navbar-nav>li>a:hover,
@@ -1246,3 +1038,6 @@ ul.navbar-nav>li>a:focus {
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
 }
+
+
+ /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #150f27; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }

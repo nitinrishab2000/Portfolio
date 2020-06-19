@@ -60,45 +60,6 @@ $(function () {
 
 
 /* =========================================
-               Portfolio
-============================================ */
-$(window).on('load', function () {
-
-    // Initialize Isotope
-    $("#isotope-container").isotope({});
-
-    // filter items on button click
-    $("#isotope-filters").on('click', 'button', function () {
-
-        // get filter value
-        var filterValue = $(this).attr('data-filter');
-
-        // filter portfolio
-        $("#isotope-container").isotope({
-            filter: filterValue
-        });
-
-        // active button
-        $("#isotope-filters").find('.active').removeClass('active');
-        $(this).addClass('active');
-    });
-});
-/* =========================================
-               Magnifier
-============================================ */
-$(function () {
-
-    $("#portfolio-wrapper").magnificPopup({
-        delegate: 'a', // child items selector, by clicking on it popup will open
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-
-});
-
-/* =========================================
                Testimonials
 ============================================ */
 $(function () {
@@ -251,7 +212,6 @@ $(window).on('load', function () {
     $("#home-heading-1").addClass("animated fadeInDown");
     $("#home-heading-2").addClass("animated fadeInLeft");
     $("#home-text").addClass("animated zoomIn");
-    $("#home-btn").addClass("animated zoomIn");
     $("#arrow-down i").addClass("animated fadeInDown infinite");
 
 });
