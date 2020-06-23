@@ -5,4 +5,6 @@ const portfolioController = require('../controllers/portfolio');
 
 router.get('/',portfolioController.getportFolio);
 
+router.post('/submit',portfolioController.postSubmit);
+
 module.exports = router;
