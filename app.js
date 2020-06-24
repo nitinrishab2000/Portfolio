@@ -1,6 +1,8 @@
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+dotenv.config();
 
 const app = express();
 
@@ -15,4 +17,4 @@ app.use('/img', express.static(path.join(__dirname, 'img')));
 
 app.use(portfolioRoutes);
 
-app.listen(3000);
+app.listen(process.env.PORT);
