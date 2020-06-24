@@ -24,13 +24,3 @@ $ npm install
 $ npm start
 
 ```
-
-## Languages & tools
-
-- [Node](https://nodejs.org/en/)
-
-- [Express](https://expressjs.com/)
-
-- [EJS](https://ejs.co/)
-
-- [Sendgrid](https://sendgrid.com/docs/)
