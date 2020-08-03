@@ -1,8 +1,14 @@
 # Portfolio
 
 Personal portfoilo.
- 
-  Some basic Git commands are:
+# ShubhaN
+
+See the [demo](https://shubha-portfolio.herokuapp.com/) here
+
+![picture](img/screenshot.PNG)
+
+
+Some basic Git commands are:
 
 ```
 $ git clone https://github.com/mohamedsamara/mern-ecommerce.git
